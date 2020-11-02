@@ -42,3 +42,12 @@ do
 	count=$(( $count+1 ))
 done
 echo "elements of array: "${arr[@]}
+
+
+sort1=`echo $arr[@]} | awk 'BEGIN{RS=" ";} {print $1}' | sort -n`
+count1=0
+for temporary_arr in $sort1
+do
+        ascending_arr[((count1++))]="$temporary_val"
+done
+echo "ascending of array:" ${ascending_arr[@]}
