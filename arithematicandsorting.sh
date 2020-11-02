@@ -14,3 +14,6 @@ echo second compute:"$second compute"
 
 third compute=$(( $c+$a/$b ))
 echo third compute:"$third compute"
+
+fourth computation=$(( $c%$a+$b ))
+echo fourth computation="$fourth computation"
