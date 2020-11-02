@@ -17,3 +17,11 @@ echo third compute:"$third compute"
 
 fourth computation=$(( $c%$a+$b ))
 echo fourth computation="$fourth computation"
+
+
+declare -A arithematic
+arithematic[first computation]=$first computation
+arithematic[second computation]=$second computation
+arithematic[third computation]=$third computation
+arithematic[fourth computation]=$fourth computation
+echo "dictionary values :" ${arithematic[@]}
