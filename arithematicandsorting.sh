@@ -8,3 +8,6 @@ read -p "enter value: " c
 
 first compute=$(( $a+$b+$c ))
 echo first compute:"$first compute"
+
+second compute=$(( $a*$b+$c ))
+echo second compute:"$second compute"
