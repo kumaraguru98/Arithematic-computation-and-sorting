@@ -24,8 +24,16 @@ arithematic[first computation]=$first computation
 arithematic[second computation]=$second computation
 arithematic[third computation]=$third computation
 arithematic[fourth computation]=$fourth computation
+
 echo "dictionary values :" ${arithematic[@]}
 
+sort=`echo $arr[@]} | awk 'BEGIN{RS=" ";} {print $1}' | sort -n -r`
+count=0
+for temporary_arr in $sort
+do
+	descending_arr[((count++))]="$temporary_val"
+done
+echo "descending of arr:" ${descending_arr[@]}
 temporary_arr=${arithematic[@]}
 
 for temporary_val in $temporary_arr
