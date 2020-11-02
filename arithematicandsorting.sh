@@ -25,3 +25,12 @@ arithematic[second computation]=$second computation
 arithematic[third computation]=$third computation
 arithematic[fourth computation]=$fourth computation
 echo "dictionary values :" ${arithematic[@]}
+
+temporary_arr=${arithematic[@]}
+
+for temporary_val in $temporary_arr
+do
+	arr[count]=$temporary_val
+	count=$(( $count+1 ))
+done
+echo "elements of array: "${arr[@]}
